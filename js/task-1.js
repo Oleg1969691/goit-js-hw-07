@@ -1,13 +1,13 @@
 'use strike'
 
-const categoriesList = document.querySelectorAll('#categories .item');
+const categories = document.querySelectorAll('.item');
 
-console.log(`Number of categories: ${categoriesList.length}`);
+console.log('Number of categories:', categories.length);
 
-categoriesList.forEach(category => {
+categories.forEach((category) => {
   const categoryName = category.querySelector('h2').textContent;
-  const categoryItemsCount = category.querySelectorAll('ul li').length;
+  const categoryElements = category.querySelectorAll('li').length;
 
-  console.log(`Category: ${categoryName}`);
-  console.log(`Number of items: ${categoryItemsCount}`);
+  console.log('Category:', categoryName);
+  console.log('Elements:', categoryElements);
 });
