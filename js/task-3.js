@@ -1,12 +1,12 @@
-'use stroke'
+'use strict'
 
-  const nameInput = document.getElementById('name-input');
-    const nameOutput = document.getElementById('name-output');
+const nameInput = document.getElementById('name-input');
+const nameOutput = document.getElementById('name-output');
 
-    nameInput.addEventListener('input', updateName);
+nameInput.addEventListener('input', updateName);
 
-    function updateName() {
-      const inputText = nameInput.value.trim();
-      const outputText = inputText === '' ? 'Anonymous' : inputText;
-      nameOutput.textContent = outputText;
-    }
+function updateName() {
+  const inputText = nameInput.value.trim();
+  const outputText = inputText === '' ? 'Anonymous' : inputText;
+  nameOutput.textContent = outputText;
+}

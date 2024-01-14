@@ -1,4 +1,4 @@
-'use stroke'
+'use strict'
     const loginForm = document.querySelector('.login-form');
 
     loginForm.addEventListener('submit', function (event) {

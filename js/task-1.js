@@ -1,4 +1,4 @@
-'use strike'
+'use strict'
 
 const categories = document.querySelectorAll('.item');
 
